@@ -43,3 +43,6 @@ pipenv run odoo -c odoo.conf -i base
 pipenv run odoo -c odoo.conf
 ```
 
+Install CRM App and enable Leads in CRM Configuration.
+
+CRM Condo Extend will auto install :)
