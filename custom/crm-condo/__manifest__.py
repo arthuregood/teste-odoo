@@ -7,8 +7,10 @@
     'category': 'Extra Tools',
     'summary': 'CRM Extend to Manage Condo',
     'author': 'Arthur Eduardo Good',
-    'depends': [],
-    'data': [],
+    'depends': ['crm'],
+    'data': [
+      'views/crm_leads_condo_view.xml'
+    ],
     'installable': True,
     'application': True,
     'auto_install': True

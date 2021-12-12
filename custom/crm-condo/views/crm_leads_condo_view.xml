@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="crm_lead_inherit" model="ir.ui.view">
+      <field name="name">crm.lead.inherit</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='website']" position="after">
+            <field name='condo_units'/>
+            <field name='condo_blocks'/>
+            <field name='condo_residents'/>
+            <field name='condo_type'/>
+            <field name='condo_schedule'/>
+        </xpath>
+      </field>
+  </record>
+
+  <record id="crm_tree_inherit" model="ir.ui.view">
+      <field name="name">crm.lead.inherit</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.crm_case_tree_view_leads"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='team_id']" position="after">
+            <field name='condo_units'/>
+            <field name='condo_blocks'/>
+            <field name='condo_residents'/>
+            <field name='condo_type'/>
+            <field name='condo_schedule'/>
+        </xpath>
+      </field>
+  </record>
+
+  <record id="crm_opportunities_inherit" model="ir.ui.view">
+      <field name="name">crm.lead.inherit</field>
+      <field name="model">crm.lead</field>
+      <field name="inherit_id" ref="crm.crm_case_form_view_oppor"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='partner_id']" position="after">
+            <field name='condo_units'/>
+            <field name='condo_blocks'/>
+            <field name='condo_residents'/>
+            <field name='condo_type'/>
+            <field name='condo_schedule'/>
+        </xpath>
+      </field>
+  </record>
+</odoo>
