@@ -25,9 +25,11 @@ grant all privileges on database odootest to odoouser;
 
 ## Default odoo access
 
+```
+http://127.0.0.1:8069
+```
 ### User: admin
 ### Password: admin
-
 
 ## First use
 
@@ -40,3 +42,4 @@ pipenv run odoo -c odoo.conf -i base
 ```
 pipenv run odoo -c odoo.conf
 ```
+
